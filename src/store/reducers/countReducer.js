@@ -8,9 +8,9 @@ export  const  countReducer= (state=initialState,action) =>{
     // eslint-disable-next-line default-case
     switch (action.type){
         case DECREMENT:
-            return {count: state.count - 1}
+            return {...state,count: state.count - action.payload}
         case INCREMENT:
-            return {count: state.count + 1}
+            return {...state,count: state.count + action.payload}
         default:
         return state
     }

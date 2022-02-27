@@ -1,15 +1,16 @@
-export  const  INCREMENT = "INCREMENT"
-export  const  DECREMENT = "DECREMENT"
+export const INCREMENT = "INCREMENT";
+export const DECREMENT = "DECREMENT";
 
-export  const  increment = ()=>{
-    return {
-        type: INCREMENT
-    }
-}
+export const increment = (num) => {
+  return {
+    type: INCREMENT,
+    payload: num
+  };
+};
 
-
-export  const  decrement = ()=>{
-    return {
-        type: DECREMENT
-    }
-}
+export const decrement = (num) => {
+  return {
+    type: DECREMENT,
+    payload: num
+  };
+};
